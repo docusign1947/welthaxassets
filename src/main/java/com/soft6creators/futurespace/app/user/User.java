@@ -9,11 +9,10 @@ import javax.persistence.OneToOne;
 import com.soft6creators.futurespace.app.account.Account;
 import com.soft6creators.futurespace.app.tradingaccount.TradingAccount;
 
-@Entity
+@Entity(name="UserTable")
 public class User {
 	private String fullName;
 	@Id
-	@Column(length = 128)
 	private String email;
 	private String password;
 	@ManyToOne
