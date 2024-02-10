@@ -20,8 +20,8 @@ com/soft6creators/futurespace/app/user/UserRepository.class
 com/soft6creators/futurespace/app/propcountry/PropCountry.class
 com/soft6creators/futurespace/app/accounttype/AccountTypeController.class
 com/soft6creators/futurespace/app/withdrawal/Withdrawal.class
-com/soft6creators/futurespace/app/state/StateService.class
 com/soft6creators/futurespace/app/country/Country.class
+com/soft6creators/futurespace/app/state/StateService.class
 com/soft6creators/futurespace/app/city/City.class
 com/soft6creators/futurespace/app/interest/InterestController.class
 com/soft6creators/futurespace/app/address/Address.class

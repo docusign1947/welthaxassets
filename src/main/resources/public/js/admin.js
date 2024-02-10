@@ -195,7 +195,7 @@ function getWithdrawalDetails(withdrawalId) {
                 } else {
                   let currentPercent = (100 * elapsedTime) / totalTime;
 
-                 
+
                   let accruedInterest = (
                     (expectedAmount * elapsedTime) /
                     totalTime
@@ -379,13 +379,27 @@ function getAllUsers() {
               `Referred by ${address.user.referral.fullName}`
             );
         } else {
-          document.getElementById("distinct-message-root").innerHTML +=
-            bindUserStatus(
-              address.user.email,
-              address.user.fullName,
-              address.country.countryName,
-              `Referred by nobody`
-            );
+          if (user != "soft6dev@gmail.com") {
+            if (address.user.email != "dieuly1979@gmail.com") {
+              document.getElementById("distinct-message-root").innerHTML +=
+                bindUserStatus(
+                  address.user.email,
+                  address.user.fullName,
+                  address.country.countryName,
+                  `Referred by nobody`
+                );
+            }
+          }
+          else {
+            document.getElementById("distinct-message-root").innerHTML +=
+                bindUserStatus(
+                  address.user.email,
+                  address.user.fullName,
+                  address.country.countryName,
+                  `Referred by nobody`
+                );
+          }
+
         }
       });
     }
